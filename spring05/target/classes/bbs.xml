@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs"> <!-- member table을 대상으로 한다. -->
+	<insert id="insert" parameterType="BbsDTO">
+		insert into bbs values (#{id}, #{title}, #{content}, #{writer}) <!-- ?역할을 대신한다. 이름 같은것을 바로 찾아서 집어넣어준다. orm이 맵핑을 알아서 해주는 것이다.-->
+	</insert>
+		
+	<delete id="delete" parameterType="BbsDTO">
+		delete * from bbs where id = #{id}
+	</delete>
+
+</mapper>
