@@ -1,0 +1,8 @@
+@charset "UTF-8";
+body{
+	/* 컨트롤+쉬프트+/ : 문법에 맞는 자동 추석*/
+	/* body태그에 정의하고 싶은 스타일을 정의*/
+	background: red; /*배경색*/
+	color: white; /*글자색*/
+	
+}
